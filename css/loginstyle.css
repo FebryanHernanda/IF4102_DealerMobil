@@ -1,0 +1,91 @@
+body {
+	background: url('../img/background.png') no-repeat center center fixed;
+	background-size: cover;
+
+
+}
+
+
+
+.main-section {
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+
+.modal-content {
+	background-color: #34495e;
+	opacity: .95;
+	padding: 0 35px;
+}
+
+.modal-content h3 {
+	margin-top: -25px;
+}
+
+.modal-content h5 {
+	margin-bottom: 20px;
+}
+
+
+.user-img {
+	margin-top: -50px;
+	margin-bottom: 35px;
+}
+
+.user-img img {
+	height: 100px;
+	width: 100px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+.form-group input {
+	height: 42px;
+	border-radius: 5px;
+	border: 0px;
+	font-size: 18px;
+	padding-left: 54px;
+
+}
+
+.fa-user,
+.fa-lock {
+	position: absolute;
+	left: 30px;
+	margin-top: 11px;
+	color: #555e60;
+}
+
+
+#button {
+	width: 30%;
+	margin: 10px o 25px;
+	float: left;
+
+
+}
+
+a,
+#button {
+	display: inline-block;
+	/* padding-bottom: 25px; */
+}
+
+a {
+	float: right;
+	margin-top: 10px;
+}
+
+.forgot-pass {
+	color: white;
+	right: 200px;
+
+
+}
+
+.forgot-pass:hover {
+	color: white;
+}
