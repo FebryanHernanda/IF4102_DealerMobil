@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/kategori.css">
 
     <title>FAHMI AUTOCAR2000</title>
 </head>
@@ -24,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active mr-3">
-                        <a class="nav-link" href="kategori.html">KATEGORI</a>
+                        <a class="nav-link" href="KategoriCars.html">KATEGORI</a>
                     </li>
                     <li class="nav-item active dropdown mr-3">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
@@ -38,7 +39,7 @@
                         </div>
                     </li>
                     <li class="nav-item active mr-3">
-                        <a class="nav-link" href="#">ABOUT US</a>
+                        <a class="nav-link" href="about.html">ABOUT US</a>
                     </li>
 
                     <form class="form-inline mr-5">
@@ -61,7 +62,6 @@
                             <a class="dropdown-item" href="verifikasipembayaran.html">Verifikasi Pembayaran</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="Login.html">Log Out</a>
-
                         </div>
                     </li>
                 </ul>
@@ -77,21 +77,72 @@
 
 
 
+
     <div class="container-fluid">
-        <div class="card mx-auto" id="cardprofile" style="width: 50rem">
+        <div class="card mx-auto" id="cardprofile" style="width: 54rem; important!">
             <div class="card-body">
-                <h1 class="text-center">Tentang Kami</h1>
+                <h1 class="text-center">Pesanan</h1>
                 <hr>
-                <div class="text-center">
-                    <img src="img/logoabout.png" alt="Avatar" class="avatar">
-                </div>
-                <p class="card-text">FAHMI AUTOCAR2000 merupakan dealer mobil pertama yang mengarungi dunia e-commerce
-                    indonesia. dengan berbasis online, memudahkan
-                    para pembeli untuk mencari mobil dan sparepart impian yang anda butuhkan.
-                </p>
+                <form>
+                    <div class="form-group">
+                        <label for="nama">Nama Barang </label>
+                        <input type="nama" class="form-control" id="namabarang" value="Honda Jazz (2019)" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Warna Mobil </label>
+                        <input type="nohp" class="form-control" id="warnamobil" value="Biru" readonly>
+                    </div>
+                    <div class="form-group ">
+                        <label for="email">Tipe Transmisi </label>
+                        <input type="email" class="form-control" id="tipetransmisi" value="Manual" readonly>
+                    </div>
+                    <div class="form-group ">
+                        <label for="alamat">Catatan Tambahan </label>
+                        <textarea class="form-control" id="catatantambahan" rows="3"
+                            placeholder="type here..."> </textarea>
+                    </div>
+                </form>
+                <h4>Informasi Pembeli</h4>
+                <hr>
+                <form>
+                    <div class="form-group">
+                        <label for="nama">Nama Pembeli </label>
+                        <input type="nama" class="form-control" id="namapembeli" value="Febryan Hernanda" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">No Telepon </label>
+                        <input type="nohp" class="form-control" id="notelpon" value="081394566303" readonly>
+                    </div>
+                    <div class="form-group ">
+                        <label for="email">Email </label>
+                        <input type="email" class="form-control" id="emailpembeli"
+                            value="Febryanh@students.telkomuniversity.ac.id" readonly>
+                    </div>
+                    <div class="form-group ">
+                        <label for="alamat">Alamat Penerima </label>
+                        <textarea class="form-control" id="catatantambahan" rows="3"
+                            placeholder="type here..."> Sukapura Telkom University </textarea>
+                    </div>
+                    <div class="text-center">
+                        <a href="detailbarang.html" class="btn btn-light"
+                            style="margin-top: 10px; margin-right: 20px; background-color: #dbdad7; improtant: !;">Kembali</a>
+                        <a href="pembayaran.html" class="btn btn-primary"
+                            style="margin-top: 10px; improtant: !;">Pesan</a>
+                    </div>
+                </form>
+
+
+
+
+
             </div>
         </div>
     </div>
+
+
+
+
+
 
 
 
@@ -112,7 +163,6 @@
 
 
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -125,6 +175,22 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/21b38282b1.js" crossorigin="anonymous"></script>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
