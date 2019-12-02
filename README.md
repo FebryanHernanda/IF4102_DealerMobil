@@ -1,2 +1,0 @@
-# IF4102_DealerMobil
-IMPAL IF-41-02
